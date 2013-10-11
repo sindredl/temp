@@ -28,6 +28,12 @@ target.write(line2)
 target.write("\n")
 target.write(line3)
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> dc8fbf1e2e2516b55462dc5ae7021377611d71e8
 print "And finally, we close it."
 target.close()
 
