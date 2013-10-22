@@ -26,6 +26,8 @@ print "Contents of %s copied to %s" % (from_file, to_file)
 out_file.close()
 in_file.close()
 
+#Åpner to_file som blir definert av userinput
+#og printer ut innholdet.
 nyfil = open(to_file)
 print nyfil.read()
 
