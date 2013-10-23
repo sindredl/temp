@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
 	print "You have %d cheese!" % cheese_count
 	print "You have %d boxes of crackers!" % boxes_of_crackers
@@ -23,3 +25,23 @@ cheese_and_crackers(10 + 20,  5 + 6)
 #Bruker de direkte verdiene gitt og plusser på 100 og 1000.
 print "And we can combine the two, variables and math:"
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+
+def func1(age):
+	print "I am %r years old, but" % age
+	name1 = raw_input("Can you guess my name? \n >:")
+	
+	myName = "Sindre"
+	notMyName = "Alfhill"
+	if(name1 == myName):
+		print "%s is indeed my name!" % name1
+		
+	elif(name1 == notMyName):
+		print "Nice try, %s Is a cool name, but unfortunately not mine :(" % name1
+		
+	else :
+		print " %r Is unfortunately not my name.. \n Did you forget capital first letter?" % name1
+		
+
+func1("22")
+
