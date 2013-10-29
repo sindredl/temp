@@ -26,7 +26,9 @@ def secret_formula(started):
 		crates = jars / 100
 		return jelly_beans, jars, crates
 	
+	
 start_point = 10000
+# Gir verdiene fra funksjonen over til variablene under i følgende rekkefølge:
 beans,  jars, crates = secret_formula(start_point)
 
 print "With a starting point of: %d" % start_point
