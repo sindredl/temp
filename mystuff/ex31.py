@@ -36,6 +36,24 @@ elif door == "2":
 	
 	
 	
-
+elif door =="3":
+	print "You meet Harry Potter"
+	print " 1. Cast Avada Cadavra / kill him."
+	print "2. Run away in fear"
+	
+	potter = raw_input("> ")
+	
+	if potter == "1":
+		print "Harry Potter dodges your spell, disarms you, and then kill you"
+		print " Game Over"
+		
+	elif potter == "2":
+		print "Harry Potter cast's a snowball on you and you fall, then he kills you. Twice."
+		print "Game over. Twice"
+	else:
+		print "Invalid choice, you're now dead."
+		print "Game Over."
+	
+	
 else:
     print "You stumble around and fall on a knife and die.  Good job!"

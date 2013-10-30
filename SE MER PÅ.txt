@@ -2,3 +2,7 @@ OPPGAVE:
 20 (Kommentering, forstå alt) + drills
 
 25 - drills, forstå alt
+
+33 - whle-for i funksjoner
+
+34 - drills
