@@ -6,3 +6,5 @@ OPPGAVE:
 33 - whle-for i funksjoner
 
 34 - drills
+
+38 - drills

@@ -1,0 +1,10 @@
+and =A thing (before and) or another thing (after and) is true or false.
+del = Deletes an variable or can delete single items from a list.
+from = Importation of modules from python library, eks: from sys import exit
+not = A check if something is not true. eks: fisk = 1 | fisk = not 0 = True.
+while = A loop that runs something as long as a statement is true. while.
+as = ???
+elif = A check, a second if check, t do something if something else specific is true. like saying if thats true, or if this is true: do this.
+global = ???
+or = if this is true or this is true do that.
+with = 

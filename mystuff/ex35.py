@@ -1,10 +1,12 @@
 from sys import exit
 
+
 def gold_room():
 	print "This room is full of gold. How much do you take?"
-	
+	#sjekker om det er 1 eller 0 i raw_input, hvis ikke dead
+	#Problemet her er at man kan ikke skrive feks 22.
 	next = raw_input("> ")
-	if "0" in next or "1" in next:
+	if next.isdigit():
 		how_much = int(next)
 	else:
 		dead("Man, learn to type a number.")
@@ -15,6 +17,7 @@ def gold_room():
 	else:
 		dead("You greedy bastard!")
 		
+#Fikset med "isdigit" sjekk
 		
 		
 def bear_room():
@@ -30,7 +33,7 @@ def bear_room():
 		if next == "take honey":
 			dead("The bear looks at you, then slaps your face off.")
 		elif  next == "taunt bear" and not bear_moved:
-			dead("The bear has moved from the door. You can go trhough it now.")
+			print ("The bear has moved from the door. You can go trhough it now.")
 			bear_moved = True
 		elif next == "taunt bear" and bear_moved:
 			dead("The bear gets pissed off and chews your legs off.")
@@ -41,14 +44,41 @@ def bear_room():
 			
 			
 def cthulu_room():
-	print "Here you see the great evil Cthulu
+	print "Here you see the great evil Cthulu."
+	print "He, it, whatever stares at you and you go insane."
+	print "Do you flee for your life or eat your head?"
+	
+	next = raw_input("> ")
+	
+	if "flee" in next:
+		start()
+	elif "head" in next:
+		dead("Well that was tasty!")
+	else:
+		cthulu_room()
+		
+		
+def dead(why):
+	print why, "Good job!"
+	exit(0)
 
-
-
-
-
-
-
+	
+def start():
+	print  "You are in a dark room."
+	print "There is a door to your right and left."
+	print "Which one do you take?"
+	
+	next = raw_input("> ")
+	
+	if next == "left":
+		bear_room()
+	elif next == "right":
+		cthulu_room()
+	else:
+		dead("You stumble around the room until you starve.")
+		
+		
+start()
 
 
 
