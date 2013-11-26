@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=nvidia-settings -l
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[nb]=Nvidia-Settings
+Name=Nvidia-Settings
+Comment[nb]=
+Comment=

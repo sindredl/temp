@@ -1,0 +1,14 @@
+{
+   "background": {
+      "scripts": [ "app.js" ]
+   },
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDVbhRYTlf3m+/TbeWmcdMDjv+JXA5xM0QRqz2+RtPZJgnIaCSR7VLfjUuRAxfX4zCKi5vNza3T2jOnG1RnLtIVX+K9POigolOSI/kEAksxUjnCRPaHwumkygzPSfphKpNr7LfMO5dMAra399+HfzTJlzYyyCFJ95sfQy6TOpL3AwIDAQAB",
+   "manifest_version": 2,
+   "name": "Media Hint",
+   "permissions": [ "proxy" ],
+   "update_url": "https://mediahint.com/chromeupdates.xml",
+   "version": "0.1.13"
+}

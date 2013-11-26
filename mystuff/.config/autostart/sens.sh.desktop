@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/sindredl/Skrivebord/sens.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[nb]=MUSESENS
+Name=MUSESENS
+Comment[nb]=endrer sensen på razer musa
+Comment=endrer sensen på razer musa
