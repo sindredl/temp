@@ -1,10 +1,11 @@
 from sys import exit
 from random import randint
+import ex45player
 
 class Room(object):
 	
 		def enter(self):
-			print "room under construction. subclass it and implement enter()."
+		print "room under construction. subclass it and implement enter()."
 			exit(1)
 			
 			
@@ -39,11 +40,11 @@ class school(Room):
 	
 	
 		if  "home" in next or "behind" in next:
-			home()
+			return 'home'
 		elif  "cafeteria" in next or "left" in next:
-			cafeteria()
+			return 'cafeteria'
 		else:
-			dead()
+			return 'dead'
 		
 class home(Room):
 	
@@ -58,8 +59,8 @@ class home(Room):
 			cash = int(next)
 			
 		else:
-			print "That kind of money won't be good for any beer."
-			dead()
+			print "What number is that?!"
+			return 'home'
 		
 		if cash < 1000:
 			print "Sorry dude, you'll have to spare it for food..."
@@ -67,7 +68,7 @@ class home(Room):
 		
 		else:
 			print "You're rich! lets go buy beer."
-			dead()
+			return 'dead'
 		
 class cafeteria(Room):
 	
@@ -79,13 +80,13 @@ class cafeteria(Room):
 		next = raw_input(":~~~")
 	
 		if "cafeteria" in next:
-			cafeteria()
+			return 'cafeteria'
 			
 		elif "home" in next:
-			home()
+			return 'home'
 			
 		else:
-			dead()
+			return 'dead'
 
 		
 		
@@ -111,5 +112,9 @@ class RoomMap(object):
 
 a_map = RoomMap('school')
 a_game = Engine(a_map)
+nameinput = raw_input("Navnet ditt mr?")
+player = ex45player.Player(nameinput)
+print "Hello %s !" % player.name
 a_game.play()
+
 
