@@ -1,3 +1,0 @@
-#!/bin/bash
-
-/usr/share/ubuntu-tweak/script-worker move $NAUTILUS_SCRIPT_SELECTED_URIS
