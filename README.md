@@ -21,7 +21,7 @@ Endret kode står kommentert.
 *You Make a Game*
 - /mystuff/ex43+45.py
 
-<h2>Kjør spill:</h2>
+<h4>Kjør spill:</h4>
 ```PowerShell
     cd /mystuff
     python ex43+45.py
