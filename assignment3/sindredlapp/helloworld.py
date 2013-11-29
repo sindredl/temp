@@ -5,8 +5,8 @@ import valid
 import cgi
 
 import rot13
-
-
+#imports rot13 file with its functions and output
+#html form
 form="""
 
 <form method="post">
@@ -29,7 +29,7 @@ form="""
 """
 
 
-
+#Mainpage class with html escape checking
 class MainPage(webapp2.RequestHandler):
 	def write_form(self, error="", month="", day="", year=""):
 		self.response.out.write(form % {"error": error,
@@ -76,7 +76,7 @@ class ThanksHandler(webapp2.RequestHandler):
 
 
 
-
+#html escape function taking use of the imported cgi.escape function from cgi
 def escape_html(s):
 	esc = cgi.escape
 	return esc(s, quote = True)
