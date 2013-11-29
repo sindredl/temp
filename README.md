@@ -2,6 +2,17 @@ IS-206 ~ Open Source / Python
 =============================
 
 
+<h4>
+
+Sindre Dahl Løken
+sinddl10@student.uia.no
+
+
+
+
+</h4>
+
+
 
 <h2>Exercise 22</h2>
 *What Do You Know So Far?*
