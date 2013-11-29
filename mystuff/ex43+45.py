@@ -1,14 +1,16 @@
 from sys import exit
 from random import randint
 import ex45player
+#imports the player class that is beeing called in bottom with print statement
+#imports the exit function used to exit when dead or game is over.
 
 class Room(object):
 	
 		def enter(self):
-		print "room under construction. subclass it and implement enter()."
+			print "room under construction."
 			exit(1)
 			
-			
+#Class that runs the game and takes use of the  Room class to enter rooms			
 class Engine(object):
 	
 	def __init__(self, room_map):
@@ -22,7 +24,7 @@ class Engine(object):
 			next_room_name = current_room.enter()
 			current_room = self.room_map.next_room(next_room_name)
 		
-		
+#calls exit function if dead class is called.	
 class dead(Room):
 	
 	def enter(self):
@@ -38,7 +40,7 @@ class school(Room):
 	
 		next = raw_input(":~~~")
 	
-	
+		#Checks if the inupt has relevant info and returns the mapped name of the class.
 		if  "home" in next or "behind" in next:
 			return 'home'
 		elif  "cafeteria" in next or "left" in next:
@@ -57,15 +59,15 @@ class home(Room):
 		
 		if next.isdigit():
 			cash = int(next)
-			
+		#Checks if the user input is a digit/integer value with the isdigit function, if it is, the value is assigned to variable cash.	
 		else:
 			print "What number is that?!"
 			return 'home'
-		
+		#if the user input is a digit/integer it checks again if it is under 1000.
 		if cash < 1000:
 			print "Sorry dude, you'll have to spare it for food..."
 			exit(0)
-		
+		#if inuput is not under 1000
 		else:
 			print "You're rich! lets go buy beer."
 			return 'dead'
@@ -89,7 +91,7 @@ class cafeteria(Room):
 			return 'dead'
 
 		
-		
+#Maps the room classes to a name in a dictionary that is used to enter the room/class.		
 class RoomMap(object):
 	
 	rooms = {
@@ -109,7 +111,8 @@ class RoomMap(object):
 		return self.next_room(self.start_room)
 		
 
-
+#sets a_map variable to the first room school, then the map from is handed to the engine class(class school)
+#nameinput is user input handed to the player class in ex45player
 a_map = RoomMap('school')
 a_game = Engine(a_map)
 nameinput = raw_input("Navnet ditt mr?")
