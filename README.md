@@ -15,6 +15,12 @@ sinddl10@student.uia.no
 </h4>
 
 
+<h2>Exercise 22</h2>
+*Assignment 1*
+
+ - /IS-206 Assignment 1.docx
+
+
 
 <h2>Exercise 22</h2>
 *What Do You Know So Far?*
