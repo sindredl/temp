@@ -5,7 +5,9 @@ IS-206 ~ Open Source / Python
 <h4>
 
 Sindre Dahl Løken
+<br>
 sinddl10@student.uia.no
+<br>
 
 
 
